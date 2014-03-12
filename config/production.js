@@ -1,8 +1,9 @@
 
 module.exports = {
 
-  js: {
-    appPath: 'productionVALUE'
+  assets: {
+    jsPath: 'js/TODO.js',
+    cssPath: 'css/TODO.css'
   }
 
 }

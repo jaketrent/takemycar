@@ -1,7 +1,8 @@
 
 
 module.exports = {
-  js: {
-    appPath: 'dist.js'
+  assets: {
+    jsPath: 'js/dist.js',
+    cssPath: 'css/index.css'
   }
 }
