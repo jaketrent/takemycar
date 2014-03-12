@@ -1,0 +1,19 @@
+{
+  "name": "takemycar",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaketrent/takemycar.git"
+  },
+  "author": "jaketrent",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "broccoli": "~0.3.0"
+  },
+  "devDependencies": {
+    "broccoli-coffee": "~0.1.0",
+    "broccoli-concat": "0.0.2",
+    "broccoli-jade": "~0.1.0"
+  }
+}
