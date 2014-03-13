@@ -1,5 +1,3 @@
-ul
-  each
-    li #{name} - #{driver}
+== outlet main
 
-add-rider
+== outlet footer

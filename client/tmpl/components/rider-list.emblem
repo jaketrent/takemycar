@@ -1,0 +1,16 @@
+span
+  = rider.nick
+  if rider.isDriver
+    span
+      | (driver
+      if rider.hasRiders
+        | of #{rider.ridersCount}
+      | )
+
+  span - #{me.nick}
+
+  if isMe
+    span (Me)
+
+  if rider.canTakeRiders
+    button click="join" Join

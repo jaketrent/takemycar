@@ -35,9 +35,10 @@ module.exports = function (broccoli) {
       'bower_components/handlebars/handlebars.js',
       'bower_components/firebase/firebase.js',
       'bower_components/ember/ember.js',
+      'bower_components/ember-data/ember-data.js',
       'vendor/emberfire-latest.js',
       'vendor/geoFire.js',
-      'lib/main.js',
+      'lib/app.js',
       'lib/**/*.js',
       'tmpl/**/*.js'
     ],

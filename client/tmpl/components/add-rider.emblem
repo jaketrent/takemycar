@@ -1,2 +1,3 @@
-Ember.TextField id='nick' valueBinding='nick'
+Ember.TextField valueBinding='nick'
+Ember.TextField type="number" min="0" max="15" valueBinding='capacity'
 button click='add' Add
