@@ -1,0 +1,2 @@
+Ember.TextField id='nick' valueBinding='nick'
+button click='add' Add

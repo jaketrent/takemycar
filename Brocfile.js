@@ -13,7 +13,9 @@ module.exports = function (broccoli) {
 
   var jsTree = broccoli.makeTree('client/js')
 
-  jsTree = coffee(jsTree)
+  jsTree = coffee(jsTree, {
+    bare: true
+  })
 
 
   var tmplTree = broccoli.makeTree('client/tmpl')
@@ -21,7 +23,9 @@ module.exports = function (broccoli) {
   tmplTree = emblem(pickFiles(tmplTree, {
     srcDir: '/',
     destDir: '/tmpl'
-  }))
+  }), {
+    stripPathFromName: 'tmpl/'
+  })
 
   var scriptTree = new broccoli.MergedTree([jsTree, tmplTree])
 
@@ -33,6 +37,7 @@ module.exports = function (broccoli) {
       'bower_components/ember/ember.js',
       'vendor/emberfire-latest.js',
       'vendor/geoFire.js',
+      'lib/main.js',
       'lib/**/*.js',
       'tmpl/**/*.js'
     ],

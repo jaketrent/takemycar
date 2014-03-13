@@ -1,4 +1,5 @@
-h2 Index emblem
 ul
   each
-    li= contents
+    li #{name} - #{driver}
+
+add-rider
