@@ -11,3 +11,7 @@ App.Rider = DS.Model.extend
   canTakeRiders: (->
     @get('isDriver') and @get('ridersCount') < @get('capacity')
   ).property('ridersCount', 'isDriver', 'capacity')
+
+  addRider: (rider) ->
+    @get('riders').pushObject rider
+    @

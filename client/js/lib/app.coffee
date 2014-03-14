@@ -3,6 +3,12 @@ App = Ember.Application.create()
 App.ApplicationAdapter = DS.FirebaseAdapter.extend
   firebase: new Firebase('https://incandescent-fire-231.firebaseio.com')
 
+App.Router.map ->
+  @route 'welcome', { path: '/' }
+  @route 'match', { path: '/match' }
+
+App.ApplicationController = Ember.Controller.extend()
+
 Ember.TEMPLATES = {}
 
 

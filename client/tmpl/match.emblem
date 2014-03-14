@@ -1,0 +1,6 @@
+h2 Match
+
+ul
+  each rider in ridersBesidesMe
+    li
+      rider-list rider=rider join="addMeAsRider"

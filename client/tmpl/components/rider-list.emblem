@@ -7,10 +7,5 @@ span
         | of #{rider.ridersCount}
       | )
 
-  span - #{me.nick}
-
-  if isMe
-    span (Me)
-
   if rider.canTakeRiders
     button click="join" Join
