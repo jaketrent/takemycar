@@ -4,8 +4,12 @@ App.MatchController = Ember.ArrayController.extend
 
   actions:
     addMeAsRider: (rider) ->
-      rider.addRider(@get('controllers.application.me'))
+      me = @get('controllers.application.me')
+      me.set 'isRiding', true
+      rider.addRider(me)
         .save()
+
+  me: Ember.computed.alias('controllers.application.me')
 
   ridersBesidesMe: (->
     me = @get('controllers.application.me')

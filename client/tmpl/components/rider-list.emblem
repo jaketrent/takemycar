@@ -7,5 +7,5 @@ span
         | of #{rider.ridersCount}
       | )
 
-  if rider.canTakeRiders
+  if canJoin
     button click="join" Join

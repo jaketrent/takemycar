@@ -7,8 +7,6 @@ App.Router.map ->
   @route 'welcome', { path: '/' }
   @route 'match', { path: '/match' }
 
-App.ApplicationController = Ember.Controller.extend()
-
 Ember.TEMPLATES = {}
 
 
