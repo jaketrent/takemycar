@@ -1,5 +1,69 @@
-body
-  background: #b6dae6
-  font-family: sans-serif
-  color: #404040
+$input-height = 40px
+$brand-primary = #093f5a
+$brand-secondary = #6fbee2
+$text-color = #efefef
 
+*
+  box-sizing: border-box
+
+body
+  background: $brand-primary
+  font-family: sans-serif
+  color: $text-color
+  margin: 0
+  padding: 10px
+
+.container
+  width: 100%
+  max-width: 320px
+  margin: 0 auto
+
+.title a
+  color: $text-color
+  font-size: 40px
+  text-transform: uppercase
+  text-decoration: none
+  padding-bottom: 2px
+  border-bottom: 1px transparent
+
+  &:hover
+    border-bottom: 1px dotted $text-color
+
+
+.full-input
+  display: block
+  position: relative
+  width: 100%
+  margin: 20px 0
+  padding: 0 7px
+  height: $input-height
+  line-height: $input-height
+  background: lighten($brand-primary, 10%)
+  border: none
+  border-radius: 3px
+  font-size: 20px
+  color: $text-color
+
+.prompt
+  display: block
+  padding-top: 10px
+  font-size: 18px
+
+.btn
+  position: relative
+  background: $brand-secondary
+  color: $text-color
+  box-shadow: 0 5px 0 darken($brand-secondary, 40%)
+
+  &:focus
+    outline: none
+
+  &:active
+    top: 2px
+    box-shadow: 0 3px 0 darken($brand-secondary, 40%)
+
+.btn-primary
+  margin-top: 30px
+
+.debug
+  display: none

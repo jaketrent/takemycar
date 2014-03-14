@@ -1,3 +1,7 @@
-Ember.TextField valueBinding="nick"
-Ember.TextField type="number" min="0" max="15" valueBinding="capacity"
-button click="add" Match!
+.prompt Your name?
+Ember.TextField valueBinding="nick" class="full-input"
+
+.prompt Your car capacity?
+Ember.TextField type="number" min="0" max="15" valueBinding="capacity" class="full-input"
+
+button click="add" class="full-input btn btn-primary" Start
