@@ -10,12 +10,6 @@ App.Router.map ->
 Ember.TEMPLATES = {}
 
 
-
-
-
-
-
-
 #ref = new Firebase('https://incandescent-fire-231.firebaseio.com').child('riders');
 #ref.push({
 #  nick: 'Jake',

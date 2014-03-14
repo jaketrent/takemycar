@@ -19,4 +19,4 @@ App.MatchController = Ember.ArrayController.extend
     else
       models.filter (rider) ->
         rider.get('nick') isnt me.get('nick')
-  ).property('models.@each')
+  ).property('model.@each')
