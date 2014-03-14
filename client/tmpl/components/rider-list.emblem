@@ -1,11 +1,11 @@
-
-= rider.nick
+span.rider-name= rider.nick
 if rider.hasCapacity
-  | &nbsp; (#{rider.ridersCount}/#{rider.capacity})
-  if rider.hasRiders
+  span.rider-capacity
+    | &nbsp; (#{rider.ridersCount}/#{rider.capacity})
+  / if rider.hasRiders
     ul
       each r in rider.riders
         li= r.nick
 
 if canJoin
-  button click="join" Join
+  button.btn.rider-join-btn click="join" Join

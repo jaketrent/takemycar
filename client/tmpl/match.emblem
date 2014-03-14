@@ -1,14 +1,14 @@
-h2 Match
 
-ul
+.prompt Join a bandwagon?
+
+ul.rider-list
   each rider in ridersBesidesMe
-    li
-      rider-list rider=rider me=../me join="addMeAsRider"
+    rider-list rider=rider me=../me join="addMeAsRider"
 
 / button click="addRand" Add Rand
-button click="removeMeAsRider" Remove me as rider
+button.full-input.btn.leave-btn click="removeMeAsRider" Throw yourself from vehicle?
 
-pre
+pre.debug
   p Debug Me
   p NicK: #{me.nick}
   p ridersCount: #{me.riders.length}

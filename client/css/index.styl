@@ -13,6 +13,9 @@ body
   margin: 0
   padding: 10px
 
+button
+  cursor: pointer
+
 .container
   width: 100%
   max-width: 320px
@@ -53,17 +56,62 @@ body
   position: relative
   background: $brand-secondary
   color: $text-color
-  box-shadow: 0 5px 0 darken($brand-secondary, 40%)
+  border: none
 
   &:focus
     outline: none
+
+.btn-primary
+  margin-top: 30px
+  box-shadow: 0 5px 0 darken($brand-secondary, 40%)
 
   &:active
     top: 2px
     box-shadow: 0 3px 0 darken($brand-secondary, 40%)
 
-.btn-primary
-  margin-top: 30px
-
 .debug
   display: none
+
+.rider-list
+  list-style: none
+  padding: 0
+
+.rider-item
+  position: relative
+  height: $input-height
+  line-height: $input-height
+  border-radius: 3px
+  background: lighten($brand-primary, 10%)
+  box-shadow: inset 1px 1px 0 darken($brand-primary, 20%)
+  margin-bottom: 6px
+
+.rider-name
+  font-size: 26px
+  padding-left: 15px
+
+$rider-join-btn-width = 64px
+
+.rider-capacity
+  position: absolute
+  top: 1px
+  right: $rider-join-btn-width + 8px
+  color: desaturate($brand-secondary, 70%)
+  letter-spacing: 1px
+
+.rider-join-btn
+  position: absolute
+  top: 1px
+  right: 0
+  height: $input-height - 1px
+  width: $rider-join-btn-width
+  margin: 0
+  line-height: $input-height - 6px
+  font-size: 16px
+  box-shadow: none
+  border-radius: 0 3px 3px 0
+
+.leave-btn
+  margin-top: 40px
+  font-size: 14px
+  background: darken(desaturate($brand-secondary, 30%), 30%)
+  color: darken($text-color, 20%)

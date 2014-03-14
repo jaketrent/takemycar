@@ -1,5 +1,9 @@
 App.RiderListComponent = Ember.Component.extend
 
+  tagName: 'li'
+
+  classNames: ['rider-item']
+
   actions:
     join: ->
       @sendAction 'join', @get('rider')
