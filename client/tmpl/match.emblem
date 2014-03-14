@@ -6,6 +6,7 @@ ul
       rider-list rider=rider me=../me join="addMeAsRider"
 
 / button click="addRand" Add Rand
+button click="removeMeAsRider" Remove me as rider
 
 pre
   p Debug Me

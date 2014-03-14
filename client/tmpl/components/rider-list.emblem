@@ -1,6 +1,6 @@
 
 = rider.nick
-if rider.isDriver
+if rider.hasCapacity
   | &nbsp; (#{rider.ridersCount}/#{rider.capacity})
   if rider.hasRiders
     ul

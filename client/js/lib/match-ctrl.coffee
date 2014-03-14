@@ -8,6 +8,12 @@ App.MatchController = Ember.ArrayController.extend
       rider.addRider(me)
       rider.save()
 
+    removeMeAsRider: ->
+      ridingWith = @get('me.ridingWith')
+      ridingWith.get('riders').removeObject @get 'me'
+      ridingWith.save()
+      @get('me').set 'ridingWith', null
+
   me: Ember.computed.alias('controllers.application.me')
 
   ridersBesidesMe: (->
@@ -21,6 +27,7 @@ App.MatchController = Ember.ArrayController.extend
   ).property('model.@each')
 
   notRidingWhenRiderLeaves: (->
-    if not @get('model').contains @get('me.ridingWith')
-      @set 'me.ridingWith', null
+    ridingWith = @get('me.ridingWith')
+    if ridingWith? and not @get('model').contains ridingWith
+      @get('me').set 'ridingWith', null
   ).observes('model.@each')

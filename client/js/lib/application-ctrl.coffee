@@ -6,13 +6,9 @@ App.ApplicationController = Ember.Controller.extend({
     $(window).bind 'beforeunload', =>
       me = @get 'me'
 
-      riders = @get('controllers.match.model')
-
-      riders.forEach (rider) ->
-        riderRiders = rider.get('riders')
-        if riderRiders.contains me
-          riderRiders.removeObject(me)
-          rider.save()
+      ridingWith = me.get('ridingWith')
+      ridingWith.get('riders').removeObject me
+      ridingWith.save()
 
       me.destroyRecord()
 

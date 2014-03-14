@@ -4,8 +4,6 @@ App.WelcomeController = Ember.ObjectController.extend
 
   actions:
     matchMe: (nick, capacity = 0) ->
-      console.log "matching: #{nick} #{capacity}"
-
       me = @get('model')
 
       me.setProperties
