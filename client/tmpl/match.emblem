@@ -1,12 +1,8 @@
-
 .prompt Join a bandwagon?
 
 ul.rider-list
   each rider in ridersBesidesMe
-    rider-list rider=rider me=../me join="addMeAsRider"
-
-/ button click="addRand" Add Rand
-button.full-input.btn.leave-btn click="removeMeAsRider" Throw yourself from vehicle?
+    rider-list rider=rider me=../me join="addMeAsRider" leave="removeMeAsRider"
 
 pre.debug
   p Debug Me

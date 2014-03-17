@@ -9,3 +9,6 @@ if rider.hasCapacity
 
 if canJoin
   button.btn.rider-join-btn click="join" Join
+
+if isMyRide
+  button.btn.rider-join-btn click="leave" Leave
