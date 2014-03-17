@@ -3,7 +3,7 @@ App.WelcomeController = Ember.ObjectController.extend
   needs: ['application']
 
   actions:
-    matchMe: (nick, capacity = 0) ->
+    initMe: (nick, capacity = 0) ->
       me = @get('model')
 
       me.setProperties
@@ -13,4 +13,8 @@ App.WelcomeController = Ember.ObjectController.extend
       @get('controllers.application').set('me', me)
 
       me.save().then =>
-        @transitionToRoute 'match'
+        if (me.get('hasCapacity'))
+          @transitionToRoute 'drive'
+        else
+          @transitionToRoute 'match'
+

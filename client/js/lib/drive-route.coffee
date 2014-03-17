@@ -1,0 +1,1 @@
+App.DriveRoute = App.RidersRoute.extend()

@@ -38,6 +38,7 @@ module.exports = function (broccoli) {
       'bower_components/ember-data/ember-data.js',
       'vendor/emberfire-latest.js',
       'vendor/geoFire.js',
+      'bower_components/underscore/underscore.js',
       'lib/app.js',
       'lib/**/*.js',
       'tmpl/**/*.js'

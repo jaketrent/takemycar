@@ -1,0 +1,15 @@
+.prompt Have your riders?
+
+ul.rider-list
+  each rider in me.riders
+    li.rider-item.is-active
+      span.rider-name= rider.nick
+
+  each rider in slotsRangeRemaining
+    li.rider-item
+      span.rider-name= rider
+      span.rider-capacity &lt;Empty&gt;
+
+App.MeDebugView
+
+

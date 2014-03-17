@@ -1,6 +1,4 @@
-App.MatchController = Ember.ArrayController.extend
-
-  needs: ['application']
+App.MatchController = App.RidersController.extend
 
   actions:
     addMeAsRider: (rider) ->
@@ -13,18 +11,6 @@ App.MatchController = Ember.ArrayController.extend
       ridingWith.get('riders').removeObject @get 'me'
       ridingWith.save()
       @get('me').set 'ridingWith', null
-
-  me: Ember.computed.alias('controllers.application.me')
-
-  ridersBesidesMe: (->
-    me = @get('controllers.application.me')
-    models = @get('model')
-    if not me
-      models
-    else
-      models.filter (rider) ->
-        rider.get('nick') isnt me.get('nick')
-  ).property('model.@each')
 
   notRidingWhenRiderLeaves: (->
     ridingWith = @get('me.ridingWith')

@@ -3,16 +3,20 @@ App.ApplicationController = Ember.Controller.extend({
   needs: ['match']
 
   cleanupMe: (->
+    console.log 'CLEANME INIT'
     $(window).bind 'beforeunload', =>
       me = @get 'me'
 
-      ridingWith = me.get('ridingWith')
-      ridingWith.get('riders').removeObject me
-      ridingWith.save()
+      if me?
 
-      me.destroyRecord()
+        ridingWith = me.get('ridingWith')
+        if ridingWith?
+          ridingWith.get('riders').removeObject me
+          ridingWith.save()
 
-      'Please wait while we cleanup...'
+        me.destroyRecord()
+
+        'Please wait while we cleanup...'
   ).on('init')
 
 })

@@ -1,0 +1,11 @@
+pre.debug
+  p Debug Me
+  p NicK: #{me.nick}
+  p ridersCount: #{me.riders.length}
+  p capacity: #{me.capacity}
+  p riders:
+  ul
+    each r in me.riders
+      li= r.nick
+  p ridingWith: #{me.ridingWith.nick}
+  p isRiding: #{me.isRiding}

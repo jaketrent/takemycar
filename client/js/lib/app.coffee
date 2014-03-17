@@ -6,6 +6,7 @@ App.ApplicationAdapter = DS.FirebaseAdapter.extend
 App.Router.map ->
   @route 'welcome', { path: '/' }
   @route 'match', { path: '/match' }
+  @route 'drive', { path: '/drive' }
 
 Ember.TEMPLATES = {}
 
