@@ -12,3 +12,5 @@ if canJoin
 
 if isMyRide
   button.btn.rider-join-btn click="leave" Leave
+
+.rider-meter style=meterStyle

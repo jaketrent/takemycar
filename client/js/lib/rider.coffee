@@ -17,6 +17,10 @@ App.Rider = DS.Model.extend
     @get('hasCapacity') and @get('ridersCount') < @get('capacity')
   ).property('ridersCount', 'hasCapacity', 'capacity')
 
+  percentFull: (->
+    if @get('hasCapacity') then @get('ridersCount') / @get('capacity') * 100 else 0
+  ).property('ridersCount', 'capacity')
+
   addRider: (rider) ->
     rider.set 'ridingWith', @
     @get('riders').pushObject rider

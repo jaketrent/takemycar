@@ -113,9 +113,16 @@ $rider-join-btn-width = 64px
   font-size: 16px
   box-shadow: none
   border-radius: 0 3px 3px 0
+  z-index: 2
 
-.leave-btn
-  margin-top: 40px
-  font-size: 14px
-  background: darken(desaturate($brand-secondary, 30%), 30%)
-  color: darken($text-color, 20%)
+.rider-meter
+  position: absolute
+  top: 1px
+  left: 0
+  width: 100%
+  height: $input-height - 1px
+  background: rgba($brand-secondary, 20%)
+  border-radius: 3px
+  z-index: 1
+  transition: all 400ms linear
+

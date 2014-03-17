@@ -20,3 +20,7 @@ App.RiderListComponent = Ember.Component.extend
   isMyRide: (->
     @get('me.ridingWith') is @get('rider')
   ).property('me.ridingWith', 'rider')
+
+  meterStyle: (->
+    "width:#{@get('rider.percentFull')}%"
+  ).property('rider.percentFull')
