@@ -20,10 +20,6 @@
     "broccoli-sass": "~0.1.2",
     "broccoli-stylus": "~0.1.1",
     "broccoli-static-compiler": "~0.1.1",
-    "broccoli-emblem-compiler": "~0.3.1-1.0",
-    "broccoli-filter": "~0.1.2",
-    "handlebars": "~1.3.0",
-    "ember-template-compiler": "~1.5.0-beta.4",
-    "emblem": "~0.3.11"
+    "broccoli-ember-emblem": "~0.1.0"
   }
 }

@@ -7,7 +7,7 @@ var concat = require('broccoli-concat')
 var jade = require('broccoli-jade')
 var stylus = require('broccoli-stylus')
 var pickFiles = require('broccoli-static-compiler')
-var emblem = require('./broccoli-ember-emblem')
+var emblem = require('broccoli-ember-emblem')
 
 module.exports = function (broccoli) {
 
