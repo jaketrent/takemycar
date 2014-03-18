@@ -1,9 +1,11 @@
-.prompt Your name?
-Ember.TextField valueBinding="nick" class="full-input"
+form submit="add"
 
-.prompt Your car capacity?
-ul.capacity-list
-  each num in capacityRange
-    capacity-list num=num capacity=../capacity click="setCapacity" class="capacity-item"
+  .prompt Your name?
+  Ember.TextField valueBinding="rider.nick" class="full-input" autofocus="autofocus" tabindex="0"
 
-button click="add" class="full-input btn btn-primary" = btnText
+  .prompt Your car capacity?
+  ul.capacity-list
+    each num in capacityRange
+      capacity-list num=num capacity=../rider.capacity click="setCapacity" class="capacity-item"
+
+  input type="submit" class="full-input btn btn-primary" value=btnText tabindex="0"

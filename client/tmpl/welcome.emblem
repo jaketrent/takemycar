@@ -1,1 +1,1 @@
-add-rider add="initMe"
+add-rider rider=this add="initMe"

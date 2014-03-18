@@ -10,6 +10,9 @@ App.Router.map ->
 
 Ember.TEMPLATES = {}
 
+Ember.TextField.reopen
+  attributeBindings: ['autofocus']
+
 
 #ref = new Firebase('https://incandescent-fire-231.firebaseio.com').child('riders');
 #ref.push({

@@ -1,1 +1,1 @@
-button.capacity-link click="set" = num
+button.capacity-link click="set" tabindex="-1" = num
