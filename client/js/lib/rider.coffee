@@ -25,3 +25,5 @@ App.Rider = FP.Model.extend
     rider.set 'ridingWith', @
     @get('riders').pushObject rider
     @
+
+

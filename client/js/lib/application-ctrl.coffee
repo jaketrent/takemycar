@@ -15,7 +15,16 @@ App.ApplicationController = Ember.Controller.extend({
 
         me.delete()
 
+        @removeLocalMeId()
+
         'Please wait while we cleanup...'
   ).on('init')
+
+  removeLocalMeId: ->
+    if window.localStorage?
+      me = JSON.parse window.localStorage.getItem('takemycar-localme')
+      if me?
+        delete me.id
+        window.localStorage.setItem('takemycar-localme', JSON.stringify me)
 
 })
