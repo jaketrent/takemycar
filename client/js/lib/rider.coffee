@@ -1,7 +1,7 @@
-App.Rider = DS.Model.extend
-  nick: DS.attr 'string'
-  capacity: DS.attr 'number'
-  riders: DS.hasMany 'rider'
+App.Rider = FP.Model.extend
+  nick: FP.attr 'string'
+  capacity: FP.attr 'number'
+  riders: FP.hasMany 'rider'
 
   # removing until emberFire/ember-data will persist riders w/ it
   #  riders: DS.hasMany 'rider', { inverse: 'drive' }

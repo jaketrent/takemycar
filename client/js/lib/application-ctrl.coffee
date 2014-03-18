@@ -14,7 +14,7 @@ App.ApplicationController = Ember.Controller.extend({
           ridingWith.get('riders').removeObject me
           ridingWith.save()
 
-        me.destroyRecord()
+        me.delete()
 
         'Please wait while we cleanup...'
   ).on('init')
