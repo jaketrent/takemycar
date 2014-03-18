@@ -69,6 +69,31 @@ button
     top: 2px
     box-shadow: 0 3px 0 darken($brand-secondary, 40%)
 
+.capacity-list
+  list-style: none
+  padding-left: 0
+
+.capacity-item
+  display: inline-block
+  width: 25%
+  padding: 5px
+
+  &.is-active .capacity-link
+    background: lighten($brand-primary, 20%)
+
+.capacity-link
+  display: block
+  height: $input-height * 1.5
+  width: 100%
+  line-height: $input-height * 1.5
+  text-align: center
+  font-size: 30px
+  color: $text-color
+  background: lighten($brand-primary, 10%)
+  border-radius: 3px
+  border: none
+  outline: none
+
 .debug
   display: none
 

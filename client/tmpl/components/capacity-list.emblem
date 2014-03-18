@@ -1,0 +1,1 @@
+button.capacity-link click="set" = num

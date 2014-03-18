@@ -1,4 +1,6 @@
 App.WelcomeRoute = Ember.Route.extend
 
   model: ->
-    @store.createRecord('rider')
+    @store.createRecord('rider',
+      capacity: 0
+    )

@@ -17,4 +17,3 @@ App.WelcomeController = Ember.ObjectController.extend
           @transitionToRoute 'drive'
         else
           @transitionToRoute 'match'
-

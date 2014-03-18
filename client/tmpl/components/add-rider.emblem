@@ -2,6 +2,8 @@
 Ember.TextField valueBinding="nick" class="full-input"
 
 .prompt Your car capacity?
-Ember.TextField type="number" min="0" max="15" valueBinding="capacity" class="full-input"
+ul.capacity-list
+  each num in capacityRange
+    capacity-list num=num capacity=../capacity click="setCapacity" class="capacity-item"
 
-button click="add" class="full-input btn btn-primary" Start
+button click="add" class="full-input btn btn-primary" = btnText

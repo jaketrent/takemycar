@@ -3,7 +3,6 @@ App.ApplicationController = Ember.Controller.extend({
   needs: ['match']
 
   cleanupMe: (->
-    console.log 'CLEANME INIT'
     $(window).bind 'beforeunload', =>
       me = @get 'me'
 
