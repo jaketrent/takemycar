@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #093f5a;
+  font-family: sans-serif;
+  color: #efefef;
+  margin: 0;
+  padding: 10px;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.title a {
+  color: #efefef;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px transparent;
+}
+.title a:hover {
+  border-bottom: 1px dotted #efefef;
+}
+.full-input {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 7px;
+  height: 40px;
+  line-height: 40px;
+  background: #0d597f;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #efefef;
+  outline: none;
+}
+.prompt {
+  display: block;
+  padding-top: 10px;
+  font-size: 18px;
+}
+.btn {
+  position: relative;
+  background: #6fbee2;
+  color: #efefef;
+  border: none;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-primary {
+  margin-top: 30px;
+  box-shadow: 0 5px 0 #227ea8;
+}
+.btn-primary:active {
+  top: 2px;
+  box-shadow: 0 3px 0 #227ea8;
+}
+.capacity-list {
+  list-style: none;
+  padding-left: 0;
+}
+.capacity-item {
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+}
+.capacity-item.is-active .capacity-link {
+  background: #1073a5;
+}
+.capacity-link {
+  display: block;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  color: #efefef;
+  background: #0d597f;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+.debug {
+  display: none;
+}
+.rider-list {
+  list-style: none;
+  padding: 0;
+}
+.rider-item {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  background: #0d597f;
+  box-shadow: inset 1px 1px 0 #073248;
+  margin-bottom: 6px;
+}
+.rider-item.is-active,
+.rider-item.is-my-ride {
+  background: #1073a5;
+}
+.rider-name {
+  font-size: 26px;
+  padding-left: 15px;
+}
+.rider-capacity {
+  position: absolute;
+  top: 1px;
+  right: 72px;
+  color: #97afba;
+  letter-spacing: 1px;
+}
+.rider-join-btn {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  height: 39px;
+  width: 64px;
+  margin: 0;
+  line-height: 34px;
+  font-size: 16px;
+  box-shadow: none;
+  border-radius: 0 3px 3px 0;
+  z-index: 2;
+}
+.rider-meter {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 100%;
+  height: 39px;
+  background: rgba(111,190,226,0.2);
+  border-radius: 3px;
+  z-index: 1;
+  transition: all 400ms linear;
+}

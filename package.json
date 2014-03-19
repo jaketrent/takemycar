@@ -8,12 +8,16 @@
   "author": "jaketrent",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "generate": "broccoli build server/public"
+  },
   "dependencies": {
-    "broccoli": "~0.3.0",
+    "express": "~3.2.6",
     "dotenv": "~0.2.5",
     "config": "~0.4.35"
   },
   "devDependencies": {
+    "broccoli": "~0.3.0",
     "broccoli-coffee": "~0.1.0",
     "broccoli-concat": "0.0.2",
     "broccoli-jade": "~0.1.0",
