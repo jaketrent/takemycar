@@ -10,7 +10,7 @@
   "private": true,
   "scripts": {
     "start": "node --harmony server/app.js",
-    "generate": "broccoli build server/public"
+    "generate": "rm -rf server/public; broccoli build server/public"
   },
   "dependencies": {
     "dotenv": "~0.2.5",

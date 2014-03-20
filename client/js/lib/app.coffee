@@ -1,7 +1,7 @@
 App = Ember.Application.create()
 
 App.Store = FP.Store.extend
-  firebaseRoot: 'https://incandescent-fire-231.firebaseio.com'
+  firebaseRoot: window.env.firebaseRoot
 
 App.Router.map ->
   @route 'welcome', { path: '/' }
